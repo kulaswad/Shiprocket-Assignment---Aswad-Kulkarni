@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f7f3">
+    <title>HappySmile — care, made simple</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#patient" aria-label="HappySmile home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M7.2 7.1c2.4-2.2 6.1-1.6 8.8.1 2.8-1.7 6.5-2.3 8.9-.1 3.4 3.1.3 8.6-.7 13.3-.8 3.6-2.2 6.6-4.2 6.6-2.2 0-2.4-5.7-4-5.7s-1.8 5.7-4 5.7c-2 0-3.4-3-4.2-6.6C6.8 15.7 3.8 10.2 7.2 7.1Z" fill="currentColor"/><path d="M11 12.6c1.2-1.2 2.7-1.3 4.2-.8" stroke="#1B6F63" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </span>
+        <span>HappySmile</span>
+      </a>
+      <nav class="screen-switch" aria-label="Choose prototype screen">
+        <a class="switch-tab is-active" href="#patient" id="patient-tab" aria-controls="patient-screen">1. Patient: after enquiry</a>
+        <a class="switch-tab" href="#desk" id="desk-tab" aria-controls="desk-screen">2. Front desk: HappySmile dashboard</a>
+      </nav>
+      <span class="prototype-badge"><span aria-hidden="true"></span> Prototype, fictional data</span>
+      <button class="reset-demo-button" type="button" id="reset-demo">Reset demo</button>
+    </header>
+
+    <main>
+      <section class="screen patient-screen is-visible" id="patient-screen" aria-labelledby="patient-title">
+        <div class="patient-device">
+          <div class="patient-overview" id="patient-overview">
+          <div class="patient-greeting">
+            <div class="patient-brandline">
+              <span class="mini-brand-mark" aria-hidden="true">✳</span>
+              <span>HAPPYSMILE <span class="brand-separator">·</span> YOUR CARE</span>
+              <button class="icon-button notification-button" type="button" aria-label="Notifications">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <i></i>
+              </button>
+            </div>
+            <div class="greeting-copy">
+              <p class="eyebrow">TUESDAY, 19 NOVEMBER</p>
+              <h1 id="patient-title">Hello, Ananya <span aria-hidden="true">☀️</span></h1>
+              <p>We’re here to make your smile feel its best.</p>
+            </div>
+          </div>
+
+          <article class="appointment-card">
+            <div class="appointment-topline">
+              <span class="status-pill"><span></span> ENQUIRY RECEIVED</span>
+              <span class="card-menu" aria-hidden="true">···</span>
+            </div>
+            <div class="appointment-main">
+              <div>
+                <p class="card-overline">YOUR FIRST VISIT</p>
+                <h2>Let’s find a time<br>that works for you.</h2>
+                <p class="appointment-subtitle">A little step towards a happier smile.</p>
+              </div>
+              <div class="calendar-illustration" aria-hidden="true">
+                <div class="calendar-head"><span></span><span></span></div>
+                <div class="calendar-body"><b>18</b><span>✦</span><span></span><span></span></div>
+              </div>
+            </div>
+            <button type="button" class="button button-light" id="callback-button">
+              <span>Request a call</span><span aria-hidden="true">↗</span>
+            </button>
+            <p class="response-note"><span class="clock-icon" aria-hidden="true">◷</span> Our care team usually calls within 30 minutes</p>
+          </article>
+
+          <div class="section-heading">
+            <div><p class="eyebrow">NO GUESSWORK</p><h2>Your care journey</h2></div>
+            <span class="journey-count">01 <span>/ 04</span></span>
+          </div>
+          <article class="journey-card">
+            <div class="journey-progress" aria-label="Step 1 of 4">
+              <div class="journey-step is-complete"><span>✓</span><i></i></div>
+              <div class="journey-step is-current"><span>2</span><i></i></div>
+              <div class="journey-step"><span>3</span><i></i></div>
+              <div class="journey-step"><span>4</span></div>
+            </div>
+            <div class="journey-labels"><span>Enquiry</span><span>We’ll call</span><span>Your visit</span><span>All smiles</span></div>
+            <div class="journey-divider"></div>
+            <div class="journey-current">
+              <span class="journey-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 3v3m10-3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v12H4V7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 14 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div><h3>We’ll be in touch shortly</h3><p>Your care coordinator will help you choose a clinic and a convenient time.</p></div>
+            </div>
+          </article>
+
+          <article class="coordinator-card">
+            <div class="coordinator-avatar" aria-hidden="true">NS<span>✦</span></div>
+            <div class="coordinator-copy"><p class="eyebrow">YOUR CARE COORDINATOR</p><h3>Neha Sharma</h3><p>Here for all your questions</p></div>
+            <button class="round-arrow" type="button" aria-label="Contact Neha Sharma">↗</button>
+          </article>
+
+          <div class="clinic-note"><span aria-hidden="true">⌖</span><p>Care that’s close to home <b>12 clinics across India</b></p><span class="note-arrow" aria-hidden="true">→</span></div>
+          <footer class="patient-footer">A brighter, healthier smile starts here. <span>♡</span></footer>
+          </div>
+
+          <div class="call-confirmation" id="call-confirmation" hidden>
+            <div class="confirmation-topline">
+              <a href="#patient" class="back-to-overview" id="back-to-overview"><span aria-hidden="true">←</span> Your care</a>
+              <span class="braces-tag">BRACES ENQUIRY</span>
+            </div>
+            <div class="confirmation-heading">
+              <span class="success-mark" aria-hidden="true">✓</span>
+              <p class="eyebrow">REQUEST RECEIVED</p>
+              <h1 id="confirmation-title" tabindex="-1">Thanks, Priya. We're calling you in about 2 minutes.</h1>
+              <p class="confirmation-subtitle" id="confirmation-message" aria-live="polite" aria-atomic="true">Your braces enquiry is with our care team.</p>
+            </div>
+
+            <article class="countdown-card" id="countdown-card">
+              <div class="countdown-ring" aria-hidden="true"><div class="countdown-ring-inner"></div></div>
+              <p class="eyebrow">CALLING YOU IN</p>
+              <p class="countdown-time" id="countdown" role="timer" aria-live="polite" aria-atomic="true">2:00</p>
+              <p class="countdown-caption">Keep your phone nearby</p>
+            </article>
+
+            <article class="disclosure-card">
+              <span class="disclosure-icon" aria-hidden="true">✳</span>
+              <div class="disclosure-copy">
+                <h2>Our AI assistant will call from <span>080-4XXX-XXXX</span>.</h2>
+                <p>It's an AI, and our team is a tap away.</p>
+                <details class="ai-details">
+                  <summary>Why we use AI</summary>
+                  <p>Our assistant can answer your first questions quickly. You can ask for a person whenever you like.</p>
+                </details>
+              </div>
+            </article>
+
+            <article class="call-preview-card">
+              <p class="eyebrow">HERE'S WHAT TO EXPECT</p>
+              <h2>A quick, easy first chat</h2>
+              <div class="call-preview-points">
+                <span><i>01</i> 2-3 quick questions</span>
+                <span><i>02</i> About 2 minutes</span>
+                <span><i>03</i> Then we can book you a slot</span>
+              </div>
+            </article>
+
+            <section class="call-options" aria-labelledby="call-options-title">
+              <h2 id="call-options-title">Make this call yours</h2>
+              <p class="option-label">Choose your language</p>
+              <div class="language-options" role="group" aria-label="Call language">
+                <button class="choice-chip is-selected" type="button" aria-pressed="true" data-language="English">English</button>
+                <button class="choice-chip" type="button" aria-pressed="false" data-language="हिन्दी">हिन्दी</button>
+                <button class="choice-chip" type="button" aria-pressed="false" data-language="Marathi">Marathi</button>
+              </div>
+              <p class="option-label later-label">Call me later</p>
+              <div class="later-options" role="group" aria-label="Choose a callback time">
+                <button class="time-chip" type="button" aria-pressed="false" data-time="In 30 min">In 30 min</button>
+                <button class="time-chip" type="button" aria-pressed="false" data-time="Evening 6-8 pm">Evening 6-8 pm</button>
+                <button class="time-chip" type="button" aria-pressed="false" data-time="Tomorrow morning">Tomorrow morning</button>
+              </div>
+              <button class="whatsapp-button" type="button" id="whatsapp-button"><span class="whatsapp-icon" aria-hidden="true">◉</span> Prefer WhatsApp instead <span aria-hidden="true">→</span></button>
+              <button class="human-button" type="button" id="human-button"><span aria-hidden="true">♡</span> Speak to a person instead</button>
+            </section>
+
+            <p class="consent-copy">By continuing you agree to be called by HappySmile. Data handled per our <a href="#privacy" id="privacy-link">privacy policy</a>.</p>
+            <div class="missed-call-actions">
+              <button type="button" class="simulate-missed" id="simulate-missed">Simulate: person doesn't pick up</button>
+              <button type="button" class="simulate-missed" id="simulate-human">Simulate: asked for human</button>
+              <button type="button" class="simulate-missed" id="reset-call" hidden>Back to call confirmation</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen desk-screen" id="desk-screen" aria-labelledby="desk-title" hidden>
+        <aside class="sidebar">
+          <a class="brand sidebar-brand" href="#desk">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7.2 7.1c2.4-2.2 6.1-1.6 8.8.1 2.8-1.7 6.5-2.3 8.9-.1 3.4 3.1.3 8.6-.7 13.3-.8 3.6-2.2 6.6-4.2 6.6-2.2 0-2.4-5.7-4-5.7s-1.8 5.7-4 5.7c-2 0-3.4-3-4.2-6.6C6.8 15.7 3.8 10.2 7.2 7.1Z" fill="currentColor"/></svg></span>
+            <span>HappySmile<small>CARE NETWORK</small></span>
+          </a>
+          <p class="side-label">WORKSPACE</p>
+          <nav class="side-nav" aria-label="Dashboard navigation">
+            <a class="side-link is-selected" href="#desk"><span class="nav-icon">▦</span> Lead queue <span class="nav-indicator"></span></a>
+            <a class="side-link" href="#desk"><span class="nav-icon">♡</span> Enquiries <span class="nav-count">12</span></a>
+            <a class="side-link" href="#desk"><span class="nav-icon">▣</span> Appointments</a>
+            <a class="side-link" href="#desk"><span class="nav-icon">♙</span> Patients</a>
+          </nav>
+          <p class="side-label clinic-label">YOUR CLINIC</p>
+          <button type="button" class="clinic-selector"><span class="clinic-dot"></span><span><b>Indiranagar</b><small>Bengaluru, Karnataka</small></span><span class="select-chevron">⌄</span></button>
+          <div class="sidebar-bottom">
+            <div class="team-card"><span class="team-icon">✳</span><b>Care that feels personal.</b><p>One smile at a time, together.</p><div class="team-avatars"><span>NS</span><span>RK</span><span>+4</span></div></div>
+            <div class="user-profile"><div class="user-avatar">PM</div><div><b>Priya Menon</b><small>Front desk</small></div><span class="profile-more">···</span></div>
+          </div>
+        </aside>
+
+        <div class="dashboard-main">
+          <header class="dashboard-top">
+            <div class="breadcrumb">Workspace <span>/</span> <b>Lead queue</b></div>
+            <div class="dashboard-tools"><span class="today-label"><span>◷</span> Tue, 19 Nov 2024</span><button type="button" class="desk-icon-button" aria-label="Notifications">♧<i></i></button><div class="user-avatar top-avatar">PM</div></div>
+          </header>
+          <div class="dashboard-content lead-dashboard-content">
+            <div class="dashboard-heading lead-dashboard-heading">
+              <div><p class="eyebrow">TUESDAY, 19 NOVEMBER 2024 <span class="heading-dot">·</span> CLINIC COORDINATOR</p><h1 id="desk-title">Good morning, Priya <span aria-hidden="true">☀️</span></h1><p class="heading-subtitle">Your lead queue is ready. Start with the people who need you most.</p></div>
+              <div class="live-indicator"><span></span> LIVE QUEUE</div>
+            </div>
+
+            <section class="lead-kpis" aria-label="Today's lead metrics">
+              <article class="lead-kpi"><span class="lead-kpi-icon kpi-mint">↗</span><div><p>ENQUIRIES TODAY</p><strong id="kpi-enquiries">12</strong></div><small>all clinics</small></article>
+              <article class="lead-kpi"><span class="lead-kpi-icon kpi-blue">◷</span><div><p>AI REACHED WITHIN 5 MIN</p><strong>83<span>%</span></strong></div><small>10 of 12 leads</small></article>
+              <article class="lead-kpi"><span class="lead-kpi-icon kpi-lilac">✓</span><div><p>BOOKED BY AI</p><strong id="kpi-booked">3</strong></div><small>visit scheduled</small></article>
+              <article class="lead-kpi"><span class="lead-kpi-icon kpi-amber">↗</span><div><p>HANDED TO STAFF</p><strong id="kpi-handoff">4</strong></div><small>human requested</small></article>
+              <article class="lead-kpi urgent-kpi"><span class="lead-kpi-icon kpi-red">!</span><div><p>NEEDS YOUR CALL NOW</p><strong id="kpi-call-now">4</strong></div><small>symptoms or human request</small></article>
+            </section>
+
+            <div class="safety-banner" role="note"><span class="safety-icon" aria-hidden="true">✓</span><p><strong>Staff always see the full transcript.</strong> Clinical or pricing questions are never answered by the AI.</p><span class="safety-lock" aria-hidden="true">▣</span></div>
+
+            <div class="lead-workspace">
+              <section class="lead-queue-panel" aria-labelledby="lead-queue-title">
+                <div class="lead-queue-heading">
+                  <div><p class="eyebrow">YOUR PRIORITY INBOX</p><div class="lead-title-line"><h2 id="lead-queue-title">Lead queue</h2><span class="lead-total" id="lead-total">12</span></div></div>
+                  <label class="lead-search"><span aria-hidden="true">⌕</span><input type="search" id="lead-search" aria-label="Search leads" placeholder="Search leads"></label>
+                </div>
+                <div class="lead-controls">
+                  <label class="lead-filter-label" for="clinic-filter">Clinic</label>
+                  <select id="clinic-filter" aria-label="Filter leads by clinic"><option value="all">All clinics</option></select>
+                  <label class="lead-filter-label sort-label" for="lead-sort">Sort</label>
+                  <select id="lead-sort" aria-label="Sort leads"><option value="priority">Priority first</option><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select>
+                </div>
+                <div class="lead-tabs" role="group" aria-label="Lead status">
+                  <button class="lead-tab is-active" type="button" aria-pressed="true" data-stage="needs-call">Needs your call <span data-tab-count="needs-call">5</span></button>
+                  <button class="lead-tab" type="button" aria-pressed="false" data-stage="booked">Booked <span data-tab-count="booked">3</span></button>
+                  <button class="lead-tab" type="button" aria-pressed="false" data-stage="ai-following">AI following up <span data-tab-count="ai-following">2</span></button>
+                  <button class="lead-tab" type="button" aria-pressed="false" data-stage="not-interested">Not interested <span data-tab-count="not-interested">2</span></button>
+                </div>
+                <div class="lead-list" id="lead-list" role="list" aria-label="Leads needing your call"></div>
+                <div class="lead-empty" id="lead-empty" hidden>No leads match these filters.</div>
+                <div class="lead-list-footer"><span>Human requests and urgent concerns are prioritized first</span><span id="lead-visible-count">5 leads</span></div>
+              </section>
+
+              <aside class="lead-detail-panel" id="lead-detail-panel" aria-label="Selected lead details">
+                <div id="lead-detail" role="region" aria-live="polite" aria-label="Selected lead details"></div>
+              </aside>
+            </div>
+            <footer class="dashboard-footer"><span>HappySmile Care Network <span>·</span> Fictional prototype data</span><span>Care first, always <b>♡</b></span></footer>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
